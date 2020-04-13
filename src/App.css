@@ -10,6 +10,10 @@
 .align-center {
   text-align: center;
 }
+
+.blue {
+  color: blue;
+}
 /* common classes end */
 
 * {

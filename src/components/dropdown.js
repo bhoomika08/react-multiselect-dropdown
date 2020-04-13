@@ -1,8 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import '../styles/dropdown.css';
+import SearchHighlight from '../helper/search-highlight';
 import DropdownUser from './dropdown-user';
 import SelectedUsers from './selected-users';
+import '../styles/dropdown.css';
 
 class Dropdown extends React.Component {
   constructor(props) {
@@ -86,8 +87,11 @@ class Dropdown extends React.Component {
     const { searchValue, selectedUsers, users } = this.state;
     let updatedList = Object.values(users).filter(user => !selectedUsers.includes(user.id));
     if (searchValue) {
-      console.log('searchValue :', searchValue);
       updatedList = updatedList.filter(user => user.username.toLowerCase().search(searchValue.toLowerCase()) !== -1);
+      updatedList = updatedList.map(user => {
+        let modifiedUsername = SearchHighlight(user.username, searchValue);
+        return { ...user, username: modifiedUsername };
+      });
     }
     return updatedList;
   }
@@ -101,10 +105,6 @@ class Dropdown extends React.Component {
       });
     }
   }
-
-  // Two components : 1. Dropdown 2. selected users result
-  // Display in a table
-  // Counter to be removed and dropdown selections will display alongside submit button
 
   render() {
     const { users, searchValue, selectedUsers, checkedUsers, isDropdownVisible, isSubmitted } = this.state;
