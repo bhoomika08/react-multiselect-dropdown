@@ -1,0 +1,38 @@
+.users-detail-container {
+  width: 90%;
+  border: 2px solid #00008B;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search {
+  width: 150px;
+  height: 25px;
+  border: 1px solid rgb(80, 77, 77);
+  border-radius: 5px;
+}
+
+.multiselect-dropdown {
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(231, 231, 211);
+}
+
+.dropdown-container {
+  position: absolute;
+}
+
+.scroll {
+  max-height: 120px;
+  overflow-y: scroll;
+}
+
+.dropdown-option {
+  margin-bottom: 5px;
+  margin-top: 2.5px;
+}

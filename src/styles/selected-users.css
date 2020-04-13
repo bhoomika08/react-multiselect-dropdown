@@ -1,0 +1,24 @@
+.table-view {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.listElement tr {
+  border: 1px solid #ddd;
+}
+
+.listElement td {
+  vertical-align: middle;
+  padding: 5px 5px;
+}
+
+.icon-delete {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.column-header > td {
+  font-weight: bold;
+}
