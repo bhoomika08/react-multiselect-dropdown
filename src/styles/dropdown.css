@@ -1,35 +1,36 @@
 .users-detail-container {
-  width: 90%;
+  width: 100%;
   border: 2px solid #00008B;
-  margin-left: 20px;
   padding: 15px;
 }
 
-.search-container {
-  position: relative;
-}
-
 .search {
-  width: 150px;
+  margin: auto;
+  width: 250px;
   height: 25px;
   border: 1px solid rgb(80, 77, 77);
   border-radius: 5px;
 }
 
-.multiselect-dropdown {
-  width: 150px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: rgb(231, 231, 211);
-}
-
 .dropdown-container {
   position: absolute;
+  top: 82px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-radius: 5px;
+  border: 2px solid rgb(83, 64, 170);
 }
 
 .scroll {
   max-height: 120px;
   overflow-y: scroll;
+}
+
+.multiselect-dropdown {
+  width: 250px;
+  border-bottom: 2px solid rgb(83, 64, 170);
+  background-color: #ffffff;
 }
 
 .dropdown-option {

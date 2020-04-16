@@ -1,7 +1,8 @@
-import axios from './axios';
+import axios from 'axios';
+import APP_CONSTANTS from '../constants/app-constants';
 
 const instance = axios.create({
-  baseURL: 'https://api.github.com/users/bhoomika08'
+  baseURL: APP_CONSTANTS.axiosBaseUrl,
 });
 
 instance.defaults.headers.common['Authorization'] = 'AUTH TOKEN FROM INSTANCE';

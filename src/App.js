@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Dropdown from './components/dropdown.js'
+import Main from './components/main.js'
 
 function App() {
   return (
-      <Dropdown />
+    <Main />
   );
 }
 

@@ -1,8 +1,4 @@
 /* Common classes start */
-.mtop-30 {
-  margin-top: 30px;
-}
-
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -14,6 +10,18 @@
 .blue {
   color: blue;
 }
+
+.pd-40 {
+  padding: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.bold {
+  font-weight: 600;
+}
 /* common classes end */
 
 * {
@@ -24,30 +32,29 @@
   text-align: center;
 }
 
-.overlay {
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  top: 0px;
-  background-color: #f3f3f5;
+.dropdown-close-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #00000030;
 }
 
 .d-flex {
   display: flex;
-  align-items: flex-end;
-  align-content: stretch;
-  justify-content: flex-start;
   flex-direction: column;
-  margin-right: 110px;
 }
 
 .button {
   display: inline-block;
-	background-color: #d8d5d5;
-	border: 1px solid black;
-	color: black;
+	background-color: #c5cdf7;
+	color: rgb(83, 64, 170)black;
 	padding: 4px;
-	border-radius: 5px;
 	cursor: pointer;
+}
+
+.btn-border {
+  border: 2px solid rgb(83, 64, 170);
+  border-radius: 5px;
 }

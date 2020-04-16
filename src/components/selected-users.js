@@ -5,15 +5,15 @@ import '../styles/selected-users.css';
 const SelectedUsers = ({ users, selectedUsers, deleteUser, deleteAllUsers}) => {
   return (
     <table className="table-view">
-      <tbody className="listElement">
+      <tbody>
         <tr className="column-header">
           <td>Name</td>
           <td>Email</td>
           <td>Website</td>
-          <td className="align-center"><div className="button" onClick={deleteAllUsers}>Delete All Users</div></td>
+          <td className="align-center"><div className="button btn-border" onClick={deleteAllUsers}>Delete All Users</div></td>
         </tr>
         {selectedUsers.map(user => (
-          <tr key={user}>
+          <tr key={user} className="listElement">
             <td>{users[user].username}</td>
             <td>{users[user].email}</td>
             <td>{users[user].website}</td>
