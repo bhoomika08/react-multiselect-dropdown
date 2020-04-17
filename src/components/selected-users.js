@@ -17,7 +17,7 @@ const SelectedUsers = ({ users, selectedUsers, deleteUser, deleteAllUsers}) => {
             <td>{users[user].username}</td>
             <td>{users[user].email}</td>
             <td>{users[user].website}</td>
-            <td className="align-center"><img src={DELETE_ICON} alt="delete" className="icon-delete" onClick={(event) => deleteUser(event, user)}></img></td>
+            <td className="align-center"><img src={DELETE_ICON} alt="delete" className="icon-delete" onClick={() => deleteUser(user)}></img></td>
           </tr>
         ))}
       </tbody>

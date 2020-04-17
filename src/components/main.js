@@ -67,7 +67,6 @@ class Main extends React.Component {
   deleteAllUsers() {
     this.setState({
       selectedUsers: [],
-      isDropdownOpen: !this.state.isDropdownOpen,
     })
   }
 
