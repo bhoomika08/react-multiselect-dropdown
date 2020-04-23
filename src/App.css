@@ -1,0 +1,60 @@
+/* Common classes start */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.blue {
+  color: blue;
+}
+
+.pd-40 {
+  padding: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.bold {
+  font-weight: 600;
+}
+/* common classes end */
+
+* {
+  box-sizing: border-box;
+}  
+
+.App {
+  text-align: center;
+}
+
+.dropdown-close-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #00000030;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: inline-block;
+	background-color: #c5cdf7;
+	color: rgb(83, 64, 170)black;
+	padding: 4px;
+	cursor: pointer;
+}
+
+.btn-border {
+  border: 2px solid rgb(83, 64, 170);
+  border-radius: 5px;
+}
